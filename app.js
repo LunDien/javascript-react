@@ -42,7 +42,7 @@
         
     }
 
-    // setInterval(() => toggleHeader(), 1000)
+    setInterval(() => toggleHeader(), 1000)
     
 
     function maskMoney(value) {
