@@ -34,7 +34,7 @@ const actions = {
     findCarInfo({cars}, event) {
         const inputValue = $('[name="header__search-box"]').value
         const infoCar = (event ? (event.target.value || event.target.innerText) : inputValue).toLowerCase().trim()
-        const newCars = cars.filter(car => Object.keys(car)
+        const newCars = cars.filter(car => car.id !== "" && Object.keys(car)
         .filter(key => (key !== 'id' && key === 'info' && Object.keys(car['info'])
         .map(key2 => key2 !== 'img' && key2 !== 'description' && key2 !== 'youtube-link' && key2 !== 'isSale' 
                                     && car['info'][key2]) || car[key]).toString()
