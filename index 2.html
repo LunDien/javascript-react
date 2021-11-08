@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V8-SuperCars</title>
+    <link rel="icon" href="./assets/img/logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="home-header">
+            <div class="grid wide">
+
+                <!-- navbar -->
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item navbar-item--separate">
+                            Download V8-SuperCars with Mobile App
+                            <div class="header__QRcode navbar-popup">
+                                <img src="./assets/img/QRcode.png" alt="" class="header__QRcode--img">
+                                <div class="header__app">
+                                    <img src="./assets/img/chplay.png" alt="" class="header__app-img">
+                                    <img src="./assets/img/apple-store.png" alt="" class="header__app-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-item un-pointer-navbar">
+                            Connect
+                            <a href="" class="navbar-item--link">
+                                <i class="fab fa-facebook-f navbar-app navbar-app-fb"></i>
+                            </a>
+                            <a href="" class="navbar-item--link">
+                                <i class="fab fa-instagram navbar-app"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-list">
+                        <li class="navbar-item navbar-item--notify">
+                            <a href="" class="navbar-item--link">
+                                <i class="navbar-icon far fa-bell"></i>
+                                Notification
+                            </a>
+                            <div class="navbar__notify">
+                                <header class="notify-header un-pointer">
+                                    <h3>Notification List</h3>
+                                </header>
+                                <ul class="notify-list">
+                                    <li class="notify-item">
+                                        <a href="#" class="notify-link">
+                                            <img src="./assets/img/logo-lamborghini.png" alt="" class="notify-img">
+                                            <div class="notify-info">
+                                                <span class="notify-name">Lamborghini Aventador</span>
+                                                <span class="notify-des">Super Car Top Speed 2021 in The Best of the
+                                                    world Car Show</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify-item">
+                                        <a href="#" class="notify-link">
+                                            <img src="./assets/img/logo-lamborghini.png" alt="" class="notify-img">
+                                            <div class="notify-info">
+                                                <span class="notify-name">Lamborghini Aventador</span>
+                                                <span class="notify-des">Super Car Top Speed 2021 in The Best of the
+                                                    world Car Show</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify-item">
+                                        <a href="#" class="notify-link">
+                                            <img src="./assets/img/logo-lamborghini.png" alt="" class="notify-img">
+                                            <div class="notify-info">
+                                                <span class="notify-name">Lamborghini Aventador</span>
+                                                <span class="notify-des">Super Car Top Speed 2021 in The Best of the
+                                                    world Car Show</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify-item">
+                                        <a href="#" class="notify-link">
+                                            <img src="./assets/img/logo-lamborghini.png" alt="" class="notify-img">
+                                            <div class="notify-info">
+                                                <span class="notify-name">Lamborghini Aventador</span>
+                                                <span class="notify-des">Super Car Top Speed 2021 in The Best of the
+                                                    world Car Show</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify-item-all">
+                                        <a href="" class="notify-link-all">
+                                            View All
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="navbar-item--link">
+                                <i class="far fa-question-circle navbar-icon navbar-icon-help"></i>
+                                Help
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <div class="navbar-item--link navbar-item--bold navbar-item--separate" id="register-form">
+                                Sign Up</div>
+                        </li>
+                        <li class="navbar-item">
+                            <div class="navbar-item--link navbar-item--bold" id="login-form">Sign In</div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- header-search -->
+                
+                <div class="header-search">
+                    <div class="header__logo">
+                        <img src="./assets/img/logo-shop.svg" alt="supercar-logo" class="header__logo-img">
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-box--wrap">
+                            <input type="checkbox" hidden id="header__search-history">
+                            <input type="text" class="header__search-box" placeholder="Search in V8-SuperCars">
+                            <ul class="header__search-history-list">
+                                <h3 class="heading__search-history-list">Search History</h3>
+                                <li class="header__search-history-item">
+                                    <a href="">Aventador</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">McLaren</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="header__search-history" class="fas fa-search header__search-icon"></label>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <label for="header-cart-list" class="fas fa-shopping-cart header__cart-icon"></label>
+                            <span class="header__cart-quantity">3</span>
+                            <input type="checkbox" hidden id="header-cart-list">
+                            <div class="header__cart-list">
+
+                                <!-- no-cart -->
+
+                                <div class="header__no-cart">
+                                    <img src="./assets/img/no-cart.png" alt="no-cart" class="header__no-cart-img">
+                                    <span class="header--no-cart-msg">No cars in the cart</span>
+                                </div>
+
+                                <!-- Cart list -->
+                                <div class="header__cart--fill">
+                                    <h5 class="heading-cart-item-list">Shopping Cart</h5>
+                                    <div class="header__cart-item-list">
+                                        <div class="header__cart-item">
+                                            <img src="./assets/img/items/2012_Lamborghini_AventadorLP7004.jpeg" alt=""
+                                                class="cart-item-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-header">
+                                                    <span class="cart-item-name">Lamborghini Aventador LP700-4</span>
+                                                    <div class="cart-item-bill">
+                                                        <span class="cart-item-price">2.700.000$</span>
+                                                        <span class="cart-item-multiply">x</span>
+                                                        <span class="cart-item-quantity">3</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item-footer">
+                                                    <div class="cart-item-des">Brand: Lamborghini</div>
+                                                    <span class="cart-item-remove">Remove</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item">
+                                            <img src="./assets/img/items/2002_Ferrari_Enzo.jpeg" alt=""
+                                                class="cart-item-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-header">
+                                                    <span class="cart-item-name">Ferrari Enzo 2002</span>
+                                                    <div class="cart-item-bill">
+                                                        <span class="cart-item-price">6.000.000$</span>
+                                                        <span class="cart-item-multiply">x</span>
+                                                        <span class="cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item-footer">
+                                                    <div class="cart-item-des">Brand: Ferrari</div>
+                                                    <span class="cart-item-remove">Remove</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item">
+                                            <img src="./assets/img/items/2005_Maybach_ExeleroConcept1.jpeg" alt=""
+                                                class="cart-item-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-header">
+                                                    <span class="cart-item-name">Maybach Exelero 2005</span>
+                                                    <div class="cart-item-bill">
+                                                        <span class="cart-item-price">7.000.000$</span>
+                                                        <span class="cart-item-multiply">x</span>
+                                                        <span class="cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item-footer">
+                                                    <div class="cart-item-des">Brand: Mercedes-Benz</div>
+                                                    <span class="cart-item-remove">Remove</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <class class="header__cart-btn">
+                                        <a href="" class="btn btn-size-s primary-btn">View Cart</a>
+                                    </class>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="product-container">
+            <div class="grid wide">
+                <div class="row">
+
+                    <div class="col l-3 m-0 c-0">
+                        <div class="category-navbar">
+                            <h4 class="category-navbar-header">
+                                <i class="fas fa-list-ul"></i>
+                                Category
+                            </h4>
+                            <ul class="category-navbar-list">
+                                <li class="category-navbar-item-list">
+                                    <a href="#" class="category-navbar-link-list">
+                                        <i class="fas fa-car-side"></i>
+                                        Brand
+                                        <i class="fas fa-car-side"></i>
+                                    </a>
+                                </li>
+
+                                <li class="category-navbar-item">
+                                    <a href="#" class="category-navbar-link">Lamborghini</a>
+                                </li>
+                                <li class="category-navbar-item">
+                                    <a href="#" class="category-navbar-link">Ferrari</a>
+                                </li>
+                                <li class="category-navbar-item">
+                                    <a href="#" class="category-navbar-link">Mercedes-Benz</a>
+                                </li>
+                                <li class="category-navbar-item">
+                                    <a href="#" class="category-navbar-link">Audi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-12 c-12">
+
+                        <div class="filter-bar-tablet">
+                            <button class="filter-bar-tablet__btn btn btn-size-s col l-0 m-3 c-3">Trending</button>
+                            <button class="filter-bar-tablet__btn btn btn-size-s col l-0 m-3 c-3">New Item</button>
+                            <button class="filter-bar-tablet__btn btn btn-size-s col l-0 m-3 c-3">Best Seller</button>
+                            <label for="filter-bar-tablet__select" class="filter-bar-tablet__btn btn btn-size-s col l-0 m-3 c-3">
+                                Price
+                                <i class="fas fa-sort filter-bar-tablet-icon"></i>
+                            </label>
+                            <input type="checkbox" hidden id="filter-bar-tablet__select">
+                            <div class="filter-bar-tablet__select-item-list">
+                                <a href="" class="filter-bar-tablet__select-item">
+                                    Low to High
+                                    <i class="filter-bar-tablet__select-icon fas fa-check"></i>
+                                </a>
+                                <a href="" class="filter-bar-tablet__select-item">
+                                    High to Low
+                                    <i class="filter-bar-tablet__select-icon fas fa-check"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="filter-bar">
+                            <span class="filter-bar__text">Sort by: </span>
+                            <button class="filter-bar__btn btn">Trending</button>
+                            <button class="filter-bar__btn btn primary-btn">New Item</button>
+                            <button class="filter-bar__btn btn">Best Seller</button>
+                            <div class="filter-bar__select">
+                                <h4 class="filter-bar__select-heading">
+                                    Price
+                                    <i class="filter-bar__select-icon fas fa-chevron-down"></i>
+                                </h4>
+                                <div class="filter-bar__select-item-list">
+                                    <a href="" class="filter-bar__select-item">
+                                        Low to High
+                                        <i class="filter-bar__select-icon fas fa-check"></i>
+                                    </a>
+                                    <a href="" class="filter-bar__select-item">
+                                        High to Low
+                                        <i class="filter-bar__select-icon fas fa-check"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="filter-bar__page">
+                                <span class="filter-bar__page-current">1</span>/14
+                                <div class="filter-bar__page-control">
+                                    <a href="" class="filter-bar__page-btn filter-bar__page-disable">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="filter-bar__page-btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row product-list">
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2012_Lamborghini_AventadorLP7004.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Lamboghini Aventador
+                                                LP700-4 2012 V12 Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <span class="product-item-price-old">3.000.000$</span>
+                                            <span class="product-item-price-new">2.700.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">20 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Lamborghini</span>
+                                            <span class="product-item-origin__country">Italy</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 ">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2013_McLaren_P1.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars McLaren P1 2013 V12
+                                                Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <span class="product-item-price-old">5.000.000$</span>
+                                            <span class="product-item-price-new">4.500.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <!-- <span class="product-item-reaction-sold">20 Sold</span> -->
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">McLaren</span>
+                                            <span class="product-item-origin__country">England</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2014_LaFerrari_.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Ferrari LaFerrari 2014
+                                                V12 Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <span class="product-item-price-old">4.000.000$</span>
+                                            <span class="product-item-price-new">3.600.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">10 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Ferrari</span>
+                                            <span class="product-item-origin__country">Italy</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2011_Pagani_Huayra.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Pagani Huayra 2011 V12
+                                                Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <!-- <span class="product-item-price-old">7.000.000$</span> -->
+                                            <span class="product-item-price-new">7.000.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">3 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Pagani</span>
+                                            <span class="product-item-origin__country">France</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <!-- <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2014_Lykan_HyperSport-3-10241.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Lykan HyperSport 2014
+                                                V12 Tutorial 100km/2.7s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <!-- <span class="product-item-price-old">4.000.000$</span> -->
+                                            <span class="product-item-price-new">4.000.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">20 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Lykan</span>
+                                            <span class="product-item-origin__country">Germany</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <!-- <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/2015-bugatti-veyron-la-finale.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Bugatti Veyron V12
+                                                Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <!-- <span class="product-item-price-old">7.000.000$</span> -->
+                                            <span class="product-item-price-new">7.000.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">20 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Bugatti</span>
+                                            <span class="product-item-origin__country">Italy</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <!-- <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/aston-martin-valhalla.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The best of super cars Aston Martin Valhalla V12 Tutorial 100km/2.9s top speed</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <span class="product-item-price-old">2.000.000$</span>
+                                            <span class="product-item-price-new">1.800.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">30 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Aston Martin</span>
+                                            <span class="product-item-origin__country">France</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/bmw_vision_m1.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The cars of the future BMW Vision Concept 2020</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <!-- <span class="product-item-price-old">8$</span> -->
+                                            <span class="product-item-price-new">8.000.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <!-- <span class="product-item-reaction-sold">20 Sold</span> -->
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">BMW</span>
+                                            <span class="product-item-origin__country">Germany</span>
+                                        </div>
+                                        <!-- <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-item-img"
+                                            style="background-image: url(./assets/img/items/ford-gt.jpeg);">
+                                        </div>
+                                    </a>
+                                    <div class="product-item-info">
+                                        <a href="#">
+                                            <h3 class="product-item-name">The Legend Ford GT limited edition</h3>
+                                        </a>
+                                        <div class="product-item-price">
+                                            <!-- <span class="product-item-price-old">4.000.000$</span> -->
+                                            <span class="product-item-price-new">5.600.000$</span>
+                                        </div>
+                                        <div class="product-item-reaction">
+                                            <div class="product-item-reaction__like">
+                                                <i class="far fa-heart product-item-reaction--no-like"></i>
+                                                <i class="fas fa-heart product-item-reaction--liked"></i>
+                                            </div>
+                                            <div class="product-item-reaction__vote">
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                                <i class="fas fa-star product-item-reaction-star"></i>
+                                            </div>
+                                            <span class="product-item-reaction-sold">10 Sold</span>
+                                        </div>
+                                        <div class="product-item-origin">
+                                            <span class="product-item-origin__brand">Ford</span>
+                                            <span class="product-item-origin__country">USA</span>
+                                        </div>
+                                        <span class="product-item-best-seller">
+                                            <i class="fas fa-check"></i>
+                                            Best Saller
+                                        </span>
+                                        <!-- <div class="product-item-discount">
+                                            <span class="product-item-discount-text">Sale</span>
+                                            <span class="product-item-percent">10%</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination-list">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link pagination-current-page">1</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">2</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">3</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">4</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">5</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link un-pointer">...</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">14</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-3 c-5">
+                        <div class="footer-shop">
+                            <a href="/" class="footer-shop__logo">
+                                <img src="./assets/img/logo-shop.svg" alt="supercar-logo" class="footer-shop__logo-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3 c-7">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h4 class="footer-item-heading">Contact</h4>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="fas fa-phone-alt footer-item-icon"></i>
+                                    0905945303
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="far fa-envelope footer-item-icon"></i>
+                                    kuhaudn@gmail.com
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="fas fa-map-marker-alt footer-item-icon"></i>
+                                    Cu Chinh Lan St, Da Nang
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-3 m-3 c-6 ">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h4 class="footer-item-heading">Service</h4>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="fas fa-car footer-item-icon"></i>
+                                    Take Care Your Cars
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="far fa-handshake footer-item-icon"></i>
+                                    Cooperation
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    <i class="fas fa-ad footer-item-icon"></i>
+                                    Advertisement
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h4 class="footer-item-heading">License</h4>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    Privacy
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">
+                                    Term Of Use
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <span class="footer-copyright">© 2021 Copyright: v8supercas.com</span>
+            </div>
+        </footer>
+        <div class="modal modal--register">
+            <div class="modal__overlay modal-close"></div>
+
+            <div class="modal__body">
+                <div class="modal__header">
+                    <h3 class="modal__heading">Sign Up</h3>
+                    <p class="modal__header-link" id="login-form">Sign In</p>
+                </div>
+
+                <div class="modal__container">
+                    <div class="modal__form">
+                        <div class="modal__form-input">
+                            <input type="email" class="modal__form-control" placeholder="Email Address">
+
+                        </div>
+                        <div class="modal__form-input">
+                            <input type="password" class="modal__form-control" placeholder="Password">
+
+                        </div>
+                        <div class="modal__form-input">
+                            <input type="password" class="modal__form-control" placeholder="Confirm password">
+                        </div>
+                        <div class="modal__form-text">
+                            By creating an account, you agree to V8-SuperCars
+                            <a href="" class="modal__form-text--link">Terms of Service</a> &
+                            <a href="" class="modal__form-text--link">Privacy Policy</a>
+                        </div>
+                        <div class="modal__form-btn">
+                            <button class="btn modal__form-btn-back modal-close">BACK</button>
+                            <button class="btn primary-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <a href="" class="btn btn-size-s modal__social modal__socical--facebook">
+                        <i class="fab fa-facebook-square modal__socical-icon"></i>
+                        <span class="modal__social-label">Login with Facebook</span>
+                    </a>
+                    <a href="" class="btn btn-size-s modal__social modal__socical--google">
+                        <i class="fab fa-google modal__socical-icon"></i>
+                        <span class="modal__social-label">Login with Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--login">
+            <div class="modal__overlay modal-close"></div>
+            <div class="modal__body">
+                <div class="modal__header">
+                    <h3 class="modal__heading">Sign In</h3>
+                    <p class="modal__header-link" id="register-form">Sign Up</p>
+                </div>
+
+                <div class="modal__container">
+                    <div class="modal__form">
+                        <div class="modal__form-input">
+                            <input type="email" class="modal__form-control" placeholder="Email Address">
+
+                        </div>
+                        <div class="modal__form-input">
+                            <input type="password" class="modal__form-control" placeholder="Password">
+
+                        </div>
+
+                        <div class="modal__form-notify">
+                            <a href="" class="modal__form-notify-link modal__form-forgot-password">Forgot Password</a>
+                            <a href="" class="modal__form-notify-link modal__form-help">Need help?</a>
+                        </div>
+                        <div class="modal__form-btn">
+                            <button class="btn modal__form-btn-back modal-close">BACK</button>
+                            <button class="btn primary-btn">SIGN IN</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <a href="" class="btn btn-size-s modal__social modal__socical--message">
+                        <i class="fas fa-comment-dots modal__socical-icon"></i>
+                        <span class="modal__social-label">SMS</span>
+                    </a>
+                    <a href="" class="btn btn-size-s modal__social modal__socical--facebook">
+                        <i class="fab fa-facebook-square modal__socical-icon"></i>
+                        <span class="modal__social-label">Facebook</span>
+                    </a>
+                    <a href="" class="btn btn-size-s modal__social modal__socical--google">
+                        <i class="fab fa-google modal__socical-icon"></i>
+                        <span class="modal__social-label">Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js">
+
+    </script>
+</body>
+
+</html>

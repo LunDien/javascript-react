@@ -1,0 +1,96 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ff4500;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-seacrh-height: calc(var(--header-height) - var(--navbar-height));
+
+    --header-search-box-height: 40px;
+    --height-btn-size-s: 32px;
+    --height-btn: 36px
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0
+}
+
+.un-pointer:hover {
+    color: unset !important;
+    cursor: default !important;
+}
+
+.red-color {
+    color: red !important;
+}
+
+.btn {
+    min-width: 142px;
+    height: var(--height-btn);
+    border: none;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    border-radius: 2px;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn.primary-btn {
+    border: none;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.btn.btn-size-s {
+    height: var(--height-btn-size-s);
+    font-size: 1.2rem;
+}
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes unhideNotify {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
