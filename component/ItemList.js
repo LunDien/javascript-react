@@ -9,7 +9,7 @@ function ItemList({ cars }) {
         <div class="row product-list">
             ${(newCars ? newCars : cars).map((car,index) => car.id !== "" 
              && index > (12 * ((currentPage ? currentPage : 0) - 1))
-             && index <= (12 * (currentPage ? currentPage : 1)) 
+             && index <  (12 * (currentPage ? currentPage : 1) + 1) 
              && html`   
                 <div class="col l-4 m-6 c-12">
                     <div class="product-item">

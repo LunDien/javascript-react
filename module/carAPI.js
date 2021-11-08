@@ -1,4 +1,4 @@
-export const carsApi = 'http://localhost:3000/cars'
+export const carsApi = 'https://demo2521647.mockable.io/cars'
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -22,7 +22,7 @@ async function postCarItems(url, data) {
 
 async function render() {
     const cars = await getCarItems(carsApi)
-    return {cars}
+    return cars
 }
 
 function getParent(element, selector) {

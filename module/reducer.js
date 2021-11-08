@@ -4,7 +4,7 @@ import {getPage, getFilterBarPage} from "./pagination.js"
 
 
 let init = await render
-const carsApi = 'http://localhost:3000/cars'
+const carsApi = 'https://demo2521647.mockable.io/cars'
 var carData = {}
 
 

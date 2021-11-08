@@ -1,6 +1,6 @@
 const carsList = document.querySelector('#cars-list')
 
-const carsApi = 'http://localhost:3000/cars'
+const carsApi = 'https://demo2521647.mockable.io/cars'
 
 
 function start() {
